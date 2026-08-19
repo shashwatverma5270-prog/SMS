@@ -1,0 +1,5 @@
+address,course,dateOfBirth,department,email,fatherName,fullName,gender,motherName,phone,rollNo,studentId
+"Ayodhya, Uttar Pradesh",B.Sc,2005-05-15,Management,rahul@example.com,Rajesh Kumar,Rahul Kumar,Male,Sunita Kumar,9876543210,1,1
+,BBA,2026-08-14,Computer Science,adarshmishra270@gmail.com,,Adarsh Mishra,Male,,9140093070,2,4
+,BBA,2005-04-19,Commerce,neha270@gmail.com,,Neha Singh,Female,,1234567890,3,5
+,B.Sc,2004-09-01,Computer Science,shashwat5270@gmail.com,,Shashwat Verma,Male,,8090083952,4,6
