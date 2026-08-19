@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Reports</title>
+
+    <link rel="stylesheet" href="reports.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2>SDMS</h2>
+
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="add-student.html">
+                    <i class="fa-solid fa-user-plus"></i> Add Student
+                </a>
+            </li>
+
+            <li>
+                <a href="view-students.html">
+                    <i class="fa-solid fa-users"></i> View Students
+                </a>
+            </li>
+
+            <li>
+                <a href="update-delete.html">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Search and Update/Delete
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-column"></i> Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <h1>Student Reports Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Students</h3>
+                <h2 id="totalStudents">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Male Students</h3>
+                <h2 id="maleStudents">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Female Students</h3>
+                <h2 id="femaleStudents">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>New Admissions</h3>
+                <h2 id="newAdmissions">0</h2>
+            </div>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Report Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Student Summary</td>
+                    <td id="summaryStatus">Available</td>
+                </tr>
+
+                <tr>
+                    <td>Department Report</td>
+                    <td id="departmentStatus">Available</td>
+                </tr>
+
+                <tr>
+                    <td>Attendance Report</td>
+                    <td>Not Available</td>
+                </tr>
+
+                <tr>
+                    <td>Admission Report</td>
+                    <td id="admissionStatus">Not Available</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <br><br>
+
+        <button onclick="openPythonReport()">
+            <i class="fa-solid fa-chart-line"></i>
+            Open Python Analytics Dashboard
+        </button>
+
+    </div>
+
+</div>
+
+<script src="reports.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef2f7;
+}
+
+.container{
+display:flex;
+height:100vh;
+}
+
+.sidebar{
+width:240px;
+background:#082c66;
+padding:20px;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+margin-bottom:30px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+margin-bottom:10px;
+}
+
+.sidebar a{
+display:block;
+padding:14px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.sidebar .active a,
+.sidebar a:hover{
+background:#0d6efd;
+}
+
+.main{
+flex:1;
+padding:30px;
+}
+
+#searchInput{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.view-header-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+margin-bottom:16px;
+flex-wrap:wrap;
+}
+
+.filter-toggle{
+display:flex;
+align-items:center;
+gap:8px;
+padding:12px 18px;
+border:none;
+border-radius:8px;
+background:#0d6efd;
+color:white;
+cursor:pointer;
+font-size:14px;
+}
+
+.filter-panel{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:12px;
+margin-bottom:20px;
+}
+
+.filter-panel.hidden{
+display:none;
+}
+
+.filter-panel input{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+th{
+background:#0d6efd;
+color:white;
+padding:15px;
+}
+
+#studentTable th,
+#studentTable td {
+white-space:nowrap;
+overflow:visible;
+}
+
+#studentTable th:nth-child(6),
+#studentTable td:nth-child(6) {
+min-width:160px;
+}
+
+td{
+padding:15px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+.action-buttons{
+display:flex;
+justify-content:center;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.view-btn,
+.edit,
+.delete{
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.view-btn{
+background:#17a2b8;
+}
+
+.edit{
+background:#28a745;
+}
+
+.delete{
+background:#dc3545;
+}
+
+.view-btn:hover{
+background:#138496;
+}
+
+.edit:hover{
+background:#218838;
+}
+
+.delete:hover{
+background:#c82333;
+}
+
+.details-card{
+margin-top:20px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+display:none;
+}
+
+.details-card h3{
+margin-bottom:12px;
+color:#082c66;
+}
+
+.details-card p{
+margin:6px 0;
+}

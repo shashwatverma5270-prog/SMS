@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update/Delete Student</title>
+
+<link rel="stylesheet" href="update-delete.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>SDMS</h2>
+
+<ul>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+<li><a href="add-student.html"><i class="fa-solid fa-user-plus"></i> Add Student</a></li>
+
+<li><a href="view-students.html"><i class="fa-solid fa-users"></i> View Students</a></li>
+
+<li class="active"><a href="update-delete.html"><i class="fa-solid fa-pen-to-square"></i> Search and Update/Delete</a></li>
+
+<li><a href="reports.html"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+
+<li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+
+<li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>Update / Delete Student</h1>
+
+<form id="updateForm">
+
+<input type="text" id="roll" name="roll" placeholder="Enter Roll Number" required>
+
+<div class="buttons">
+
+<button type="button" onclick="findStudent()">Find</button>
+
+<button type="button" onclick="updateStudent()">Update</button>
+
+<button type="button" class="delete" onclick="deleteStudent()">Delete</button>
+
+<button type="reset">Clear</button>
+
+</div>
+
+<p id="formMessage" class="message"></p>
+
+<div id="detailFields" class="hidden-fields">
+
+<input type="hidden" id="originalRoll" name="originalRoll">
+
+<input type="text" id="name" name="name" placeholder="Student Name" required>
+
+<input type="text" id="fatherName" name="fatherName" placeholder="Father's Name">
+
+<input type="text" id="motherName" name="motherName" placeholder="Mother's Name">
+
+<select id="course" name="course">
+<option value="">Select Course</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>B.Tech</option>
+<option>B.Sc</option>
+</select>
+
+<select id="department" name="department">
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>Management</option>
+<option>Commerce</option>
+</select>
+
+<select id="gender" name="gender">
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<input type="date" id="dob" name="dob" placeholder="Date of Birth">
+
+<input type="text" id="phone" name="phone" placeholder="Phone Number">
+
+<input type="email" id="email" name="email" placeholder="Email">
+
+<textarea id="address" name="address" placeholder="Address"></textarea>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="update-delete.js"></script>
+
+</body>
+</html>

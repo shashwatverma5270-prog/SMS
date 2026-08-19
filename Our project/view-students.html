@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Students</title>
+
+<link rel="stylesheet" href="view.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>SDMS</h2>
+
+<ul>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+<li><a href="add-student.html"><i class="fa-solid fa-user-plus"></i> Add Student</a></li>
+
+<li class="active"><a href="view-students.html"><i class="fa-solid fa-users"></i> View Students</a></li>
+
+<li><a href="reports.html"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+
+<li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+
+<li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="view-header-row">
+    <h1>View Students</h1>
+    <button class="filter-toggle" type="button" onclick="toggleFilterPanel()">
+        <i class="fa-solid fa-filter"></i>
+        Filters
+    </button>
+</div>
+
+<div id="filterPanel" class="filter-panel hidden">
+    <input type="text" id="searchInput" placeholder="Search by any text..." onkeyup="searchStudent()">
+    <input type="text" id="filterRoll" placeholder="Filter by Roll No" onkeyup="searchStudent()">
+    <input type="text" id="filterName" placeholder="Filter by Name" onkeyup="searchStudent()">
+    <input type="text" id="filterFather" placeholder="Filter by Father's Name" onkeyup="searchStudent()">
+    <input type="text" id="filterMother" placeholder="Filter by Mother's Name" onkeyup="searchStudent()">
+    <input type="text" id="filterCourse" placeholder="Filter by Course" onkeyup="searchStudent()">
+    <input type="text" id="filterDepartment" placeholder="Filter by Department" onkeyup="searchStudent()">
+    <input type="text" id="filterGender" placeholder="Filter by Gender" onkeyup="searchStudent()">
+    <input type="text" id="filterPhone" placeholder="Filter by Phone" onkeyup="searchStudent()">
+</div>
+
+<table id="studentTable">
+
+<thead>
+
+<tr>
+
+<th>Roll No</th>
+<th>Name</th>
+<th>Course</th>
+<th>Department</th>
+<th>Gender</th>
+<th>Phone</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentBody">
+
+</tbody>
+
+</table>
+
+<div id="studentDetails" class="details-card"></div>
+
+</div>
+
+</div>
+
+<script src="view.js"></script>
+
+</body>
+</html>
